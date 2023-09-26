@@ -270,57 +270,6 @@ body {
   color: var(--t3-White);
   filter: brightness(110%);
 }
-@media (max-width: 998px) {
-  .slider:hover {
-    cursor: auto;
-  }
-  .glKey:hover {
-    cursor: auto;
-    color: var(--t1-Verydark-grayishblue);
-    background-color: var(--t1-key-background-gl);
-  }
-  .splKey:hover {
-    cursor: auto;
-    color: var(--t1-White);
-    filter: brightness(100%);
-  }
-  .eqlKey:hover {
-    cursor: auto;
-    color: var(--t1-White);
-    filter: brightness(100%);
-  }
-  .t2 .glKey:hover {
-    cursor: auto;
-    color: var(--t2-Verydark-grayishyellow);
-    background-color: var(--t2-key-background-gl);
-  }
-  .t2.splKey:hover {
-    cursor: auto;
-    color: var(--t2-White);
-    filter: brightness(100%);
-  }
-  .t2.eqlKey:hover {
-    cursor: auto;
-    color: var(--t2-White);
-    filter: brightness(100%);
-  }
-  .t3 .glKey:hover {
-    cursor: auto;
-    color: var(--t3-Light-yellow);
-    background-color: var(--t3-key-background-gl);
-    filter: brightness(100%);
-  }
-  .t3.splKey:hover {
-    cursor: auto;
-    color: var(--t3-White);
-    filter: brightness(100%);
-  }
-  .t3.eqlKey:hover {
-    cursor: auto;
-    color: var(--t3-White);
-    filter: brightness(100%);
-  }
-}
 @media (min-width: 998px) {
   .mainContainer {
     display: flex;
