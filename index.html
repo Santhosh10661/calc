@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <div class="container-fluid mainContainer">
+      <div class="container px-4">
+        <div class="row my-3">
+          <div class="contol col-lg-4 offset-lg-4 p-0 d-flex align-items-end">
+            <span class="col-8" style="font-weight: 700; font-size: 16px"
+              >calc</span
+            >
+            <div class="col d-flex justify-content-around align-items-end">
+              <label for="slider">THEME</label>
+              <div>
+                <div class="d-flex justify-content-between mx-2">
+                  <span class="small">1</span><span class="small">2</span
+                  ><span class="small">3</span>
+                </div>
+                <div class="slider-box">
+                  <ion-icon
+                    name="ellipse"
+                    id="slider"
+                    class="slider"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="screen col-lg-4 offset-lg-4 p-3">
+            <p class="display-6 m-0 mt-1 digit"></p>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div
+            class="col-lg-4 offset-lg-4 keypad p-3"
+            style="display: flex; flex-wrap: wrap"
+          >
+            <div class="col-12 keysBox">
+              <button class="btn num glKey col m-2 pt-2">7</button>
+              <button class="btn num glKey col m-2 pt-2">8</button>
+              <button class="btn num glKey col m-2 pt-2">9</button>
+              <button class="btn delete splKey col m-2 pt-2" onclick="del()">
+                DEL
+              </button>
+            </div>
+            <div class="col-12 keysBox">
+              <button class="btn num glKey col m-2 pt-2">4</button>
+              <button class="btn num glKey col m-2 pt-2">5</button>
+              <button class="btn num glKey col m-2 pt-2">6</button>
+              <button class="btn operator glKey col m-2 pt-2">+</button>
+            </div>
+            <div class="col-12 keysBox">
+              <button class="btn num glKey col m-2 pt-2">1</button>
+              <button class="btn num glKey col m-2 pt-2">2</button>
+              <button class="btn num glKey col m-2 pt-2">3</button>
+              <button class="btn operator glKey col m-2 pt-2">-</button>
+            </div>
+            <div class="col-12 keysBox">
+              <button class="btn glKey col m-2 pt-2">.</button>
+              <button class="btn num glKey col m-2 pt-2">0</button>
+              <button class="btn operator glKey col m-2 pt-2">/</button>
+              <button class="btn operator glKey col m-2 pt-2">x</button>
+            </div>
+            <div class="col-12 keysBox">
+              <button class="btn reset splKey col m-2 pt-2" onclick="reset()">
+                RESET
+              </button>
+              <button class="btn eqlKey col m-2 pt-2" onclick="equalTo()">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="calc.js"></script>
+  </body>
+</html>

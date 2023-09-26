@@ -1,0 +1,331 @@
+:root {
+  /* --------Theme 1---------- */
+  /* Backgrounds */
+  --t1-main-background: hsl(222, 26%, 31%);
+  --t1-toggle-background-keypad-background: hsl(223, 31%, 20%);
+  --t1-screen-background: hsl(224, 36%, 15%);
+
+  /* Keys */
+
+  --t1-key-background-spl: hsl(225, 21%, 49%);
+  --t1-key-shadow-spl: hsl(224, 28%, 35%);
+
+  --t1-key-background-toggle: hsl(6, 63%, 50%);
+  --t1-key-shadow-toggle: hsl(6, 70%, 34%);
+
+  --t1-key-background-gl: hsl(30, 25%, 89%);
+  --t1-key-shadow-gl: hsl(28, 16%, 65%);
+
+  /* Text */
+
+  --t1-Verydark-grayishblue: hsl(221, 14%, 31%);
+  --t1-White: hsl(0, 0%, 100%);
+
+  /* --------Theme 2---------- */
+  /* Backgrounds */
+  --t2-main-background: hsl(0, 0%, 90%);
+  --t2-toggle-background-keypad-background: hsl(0, 5%, 81%);
+  --t2-screen-background: hsl(0, 0%, 93%);
+
+  /* Keys */
+
+  --t2-key-background-spl: hsl(185, 42%, 37%);
+  --t2-key-shadow-spl: hsl(185, 58%, 25%);
+
+  --t2-key-background-toggle: hsl(25, 98%, 40%);
+  --t2-key-shadow-toggle: hsl(25, 99%, 27%);
+
+  --t2-key-background-gl: hsl(30, 25%, 89%);
+  --t2-key-shadow-gl: hsl(35, 11%, 61%);
+
+  /* Text */
+
+  --t2-Verydark-grayishyellow: hsl(60, 10%, 19%);
+  --t2-White: hsl(0, 0%, 100%);
+
+  /* --------Theme 3---------- */
+  /* Backgrounds */
+  --t3-main-background: hsl(268, 75%, 9%);
+  --t3-toggle-background-keypadbackground-screenbackground: hsl(268, 71%, 12%);
+
+  /* Keys */
+
+  --t3-key-background-spl: hsl(281, 89%, 26%);
+  --t3-key-shadow-spl: hsl(285, 91%, 52%);
+
+  --t3-key-background-toggle: hsl(176, 100%, 44%);
+  --t3-key-shadow-toggle: hsl(177, 92%, 70%);
+
+  --t3-key-background-gl: hsl(268, 47%, 21%);
+  --t3-key-shadow-gl: hsl(290, 70%, 36%);
+
+  /* Text */
+
+  --t3-Light-yellow: hsl(52, 100%, 62%);
+  --t3-Verydark-blue: hsl(198, 20%, 13%);
+  --t3-White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--t1-White);
+  background-color: var(--t1-main-background);
+  /* background-color: var(--t2-main-background); */
+  /* background-color: var(--t3-main-background); */
+}
+
+/* theme 1 style */
+.contol {
+  font-size: 12px;
+  font-weight: 700;
+}
+.slider-box {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 10px;
+  width: 55px;
+  height: 20px;
+  background-color: var(--t1-toggle-background-keypad-background);
+  transition: 0.3s ease-out;
+}
+.slider {
+  position: relative;
+  left: 0;
+  transition: 0.3s ease-out;
+  fill: var(--t1-key-background-toggle);
+}
+.slider:hover {
+  cursor: pointer;
+}
+.screen {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 80px;
+  background-color: var(--t1-screen-background);
+  transition: 0.3s ease-out;
+  border: none;
+  border-radius: 8px;
+}
+.digit {
+  overflow-x: scroll;
+}
+.digit::-webkit-scrollbar {
+  display: none;
+}
+.keypad {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--t1-toggle-background-keypad-background);
+  transition: 0.3s ease-out;
+  border: none;
+  border-radius: 8px;
+}
+.keysBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+.keysBox button {
+  padding: 0;
+}
+.btn:focus {
+  display: none;
+}
+.glKey {
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: var(--t1-key-background-gl);
+  transition: 0.3s ease-out;
+  color: var(--t1-Verydark-grayishblue);
+  box-shadow: 0em 4px 0em hsl(28, 16%, 65%);
+}
+.glKey:hover {
+  cursor: pointer;
+  color: var(--t1-Verydark-grayishblue);
+  background-color: var(--t1-White);
+}
+.splKey {
+  background-color: var(--t1-key-background-spl);
+  transition: 0.3s ease-out;
+  color: var(--t1-White);
+  box-shadow: 0em 4px 0em hsl(224, 28%, 35%);
+}
+.splKey:hover {
+  cursor: pointer;
+  color: var(--t1-White);
+  filter: brightness(110%);
+}
+.eqlKey {
+  background-color: var(--t1-key-background-toggle);
+  transition: 0.3s ease-out;
+  color: var(--t1-White);
+  box-shadow: 0em 4px 0em hsl(6, 70%, 34%);
+}
+.eqlKey:hover {
+  cursor: pointer;
+  color: var(--t1-White);
+  filter: brightness(110%);
+}
+
+/* theme 2 style */
+.t2 {
+  color: var(--t2-Verydark-grayishyellow);
+}
+.t2 .slider-box {
+  background-color: var(--t2-toggle-background-keypad-background);
+}
+.t2 .slider {
+  fill: var(--t2-key-background-toggle);
+}
+.t2 .screen {
+  background-color: var(--t2-screen-background);
+}
+.t2 .keypad {
+  background-color: var(--t2-toggle-background-keypad-background);
+}
+.t2 .glKey {
+  background-color: var(--t2-key-background-gl);
+  color: var(--t2-Verydark-grayishyellow);
+  box-shadow: 0em 4px 0em hsl(35, 11%, 61%);
+}
+.t2 .glKey:hover {
+  cursor: pointer;
+  color: var(--t2-Verydark-grayishyellow);
+  background-color: var(--t2-White);
+}
+.t2 .splKey {
+  background-color: var(--t2-key-background-spl);
+  color: var(--t2-White);
+  box-shadow: 0em 4px 0em hsl(185, 58%, 25%);
+}
+.t2.splKey:hover {
+  cursor: pointer;
+  color: var(--t2-White);
+  filter: brightness(110%);
+}
+.t2 .eqlKey {
+  background-color: var(--t2-key-background-toggle);
+  color: var(--t2-White);
+  box-shadow: 0em 4px 0em hsl(25, 99%, 27%);
+}
+.t2.eqlKey:hover {
+  cursor: pointer;
+  color: var(--t2-White);
+  filter: brightness(110%);
+}
+/* theme 3 style */
+.t3 {
+  color: var(--t3-Light-yellow);
+}
+.t3 .slider-box {
+  background-color: var(
+    --t3-toggle-background-keypadbackground-screenbackground
+  );
+}
+.t3 .slider {
+  fill: var(--t3-key-background-toggle);
+}
+.t3 .screen {
+  background-color: var(
+    --t3-toggle-background-keypadbackground-screenbackground
+  );
+}
+.t3 .keypad {
+  background-color: var(
+    --t3-toggle-background-keypadbackground-screenbackground
+  );
+}
+.t3 .glKey {
+  background-color: var(--t3-key-background-gl);
+  color: var(--t3-Light-yellow);
+  box-shadow: 0em 4px 0em hsl(290, 70%, 36%);
+}
+.t3 .glKey:hover {
+  cursor: pointer;
+  color: var(--t3-Light-yellow);
+  background-color: var(--t3-key-background-gl);
+  filter: brightness(150%);
+}
+.t3 .splKey {
+  background-color: var(--t3-key-background-spl);
+  color: var(--t3-White);
+  box-shadow: 0em 4px 0em hsl(285, 91%, 52%);
+}
+.t3.splKey:hover {
+  cursor: pointer;
+  color: var(--t3-White);
+  filter: brightness(150%);
+}
+.t3 .eqlKey {
+  background-color: var(--t3-key-background-toggle);
+  color: var(--t3-Verydark-blue);
+  box-shadow: 0em 4px 0em hsl(177, 92%, 70%);
+}
+.t3.eqlKey:hover {
+  cursor: pointer;
+  color: var(--t3-White);
+  filter: brightness(110%);
+}
+@media (max-width: 998px) {
+  .slider:hover {
+    cursor: auto;
+  }
+  .glKey:hover {
+    cursor: auto;
+    color: var(--t1-Verydark-grayishblue);
+    background-color: var(--t1-key-background-gl);
+  }
+  .splKey:hover {
+    cursor: auto;
+    color: var(--t1-White);
+    filter: brightness(100%);
+  }
+  .eqlKey:hover {
+    cursor: auto;
+    color: var(--t1-White);
+    filter: brightness(100%);
+  }
+  .t2 .glKey:hover {
+    cursor: auto;
+    color: var(--t2-Verydark-grayishyellow);
+    background-color: var(--t2-key-background-gl);
+  }
+  .t2.splKey:hover {
+    cursor: auto;
+    color: var(--t2-White);
+    filter: brightness(100%);
+  }
+  .t2.eqlKey:hover {
+    cursor: auto;
+    color: var(--t2-White);
+    filter: brightness(100%);
+  }
+  .t3 .glKey:hover {
+    cursor: auto;
+    color: var(--t3-Light-yellow);
+    background-color: var(--t3-key-background-gl);
+    filter: brightness(100%);
+  }
+  .t3.splKey:hover {
+    cursor: auto;
+    color: var(--t3-White);
+    filter: brightness(100%);
+  }
+  .t3.eqlKey:hover {
+    cursor: auto;
+    color: var(--t3-White);
+    filter: brightness(100%);
+  }
+}
+@media (min-width: 998px) {
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
